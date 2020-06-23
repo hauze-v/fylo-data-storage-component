@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="author" content="Adam Hauze">
+  <meta name="description" content="The purpose of this webpage is to challenge my HTML & CSS skills by building this data storage component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,16 +17,35 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <div class="fylo-container">
+    <img src="images/logo.svg" class="logo" alt="Fylo logo">
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
+    <div class="icon-container">
+      <div class="icon">
+        <img src="images/icon-document.svg" class="icon-document" alt="document icon">
+      </div>
+      <div class="icon">
+        <img src="images/icon-folder.svg" class="icon-folder" alt="folder icon">
+      </div>
+      <div class="icon">
+        <img src="images/icon-upload.svg" class="icon-upload" alt="upload icon">
+      </div>
+    </div>
+  </div>
+
+  <div class="data-storage-container">
+    <span>You've used <strong>815 GB</strong> of your storage</span>
+    <span>0 GB</span>
+    <span>1000 GB</span>
+  </div>
+
+  <div class="data-left-container">
+    185 GB Left
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.hyperstylescript.com/">Adam Hauze</a>.
   </div>
 </body>
 </html>

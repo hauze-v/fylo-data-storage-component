@@ -15,32 +15,48 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+  <div class="data-storage-component">
 
-  <div class="fylo-container">
-    <img src="images/logo.svg" class="logo" alt="Fylo logo">
+    <!-- Fylo logo with icon container -->
+    <div class="container container-1">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Fylo Logo">
+      </div>
 
-    <div class="icon-container">
-      <div class="icon">
-        <img src="images/icon-document.svg" class="icon-document" alt="document icon">
-      </div>
-      <div class="icon">
-        <img src="images/icon-folder.svg" class="icon-folder" alt="folder icon">
-      </div>
-      <div class="icon">
-        <img src="images/icon-upload.svg" class="icon-upload" alt="upload icon">
+      <div class="icons">
+        <a href="#"><img src="images/icon-document.svg" alt="Document icon"></a>
+        <a href="#"><img src="images/icon-folder.svg" alt="Folder icon"></a>
+        <a href="#"><img src="images/icon-upload.svg" alt="Upload icon"></a>
       </div>
     </div>
-  </div>
 
-  <div class="data-storage-container">
-    <span>You've used <strong>815 GB</strong> of your storage</span>
-    <span>0 GB</span>
-    <span>1000 GB</span>
-  </div>
+    <!-- Data used container -->
+    <div class="container container-2">
+      <div class="wrapper">
+        <h5>You've used <span>815</span>GB of your storage.</h5>
 
-  <div class="data-left-container">
-    185 GB Left
+        <!-- Data storage bar -->
+        <div class="bar">
+          <div class="progress">
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <!-- Data storage text underneath bar -->
+        <div class="bar-text">
+          <h5>0 GB</h5>
+          <h5>1000 GB</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- White storage left container -->
+    <div class="container container-3">
+      <h1>185</h1>
+      <h5>GB LEFT</h5>
+    </div>
   </div>
   
   <div class="attribution">

@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
   </head>
-
   <body>
-    <div class="orientation">
-      <div class="container">
-      <div class="box box1">
-        <img src="images/logo.svg" alt="Fylo Logo" class="logo">
-        <div class="documents">
-          <div class="icon-box">
-            <div class="icon file"></div>
+    <div class="data-storage-component">
+      <div class="container container-1">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </div>
+        <div class="icons">
+          <a href="#"><img src="./images/icon-document.svg" alt="Document Icon" /></a>
+          <a href="#"><img src="./images/icon-folder.svg" alt="Folder Icon" /></a>
+          <a href="#"><img src="./images/icon-upload.svg" alt="Upload Icon" /></a>
+        </div>
+      </div>
+      <div class="container container-2">
+        <div class="wrapper">
+          <h5>You’ve used <span>815</span> GB of your storage</h5>
+          <div class="bar">
+            <div class="progress">
+              <div class="dot"></div>
+            </div>
           </div>
-          <div class="icon-box">
-            <div class="icon folder"></div>
-          </div>
-          <div class="icon-box">
-            <div class="icon upload"></div>
+          <div class="bar-text">
+            <h5>0 GB</h5>
+            <h5>1000 GB</h5>
           </div>
         </div>
       </div>
-
-      <div class="box box2">
-        <p class="space-used">You’ve used <strong>815 GB</strong> of your storage</p>
-        <div class="outer-bar">
-          <div class="inner-bar">
-            <div class="bullet"></div>
-          </div>
-        </div>
-        <div class="gigas">
-          <div>0 GB</div>
-          <div>1000 GB</div>
-        </div>
-
+      <div class="container container-3">
+        <h1>185</h1>
+        <h5>GB LEFT</h5>
       </div>
-      <div class="triangle-topright"></div>
-      <div class="box-storage-msg">
-        <p>185 <span>gb left</span></p>
-      </div>
-
     </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/OnescuRadu">Onescu Radu</a>.
     </div>
-    <footer class="attribution">
-      <div class="container">
-        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://codepen.io/rociodithurbide/" target="_blank">Rocío Dithurbide</a>.</p>
-      </div>
-    </footer>
-
-
-</body>
+  </body>
 </html>
+

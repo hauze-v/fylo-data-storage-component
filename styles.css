@@ -180,24 +180,87 @@ body {
 @media only screen and (min-width: 992px) {
   body {
     background-color: hsl(229, 57%, 11%);
-    background-image: url(./images/bg-desktop.svg);
+
+    background-image: url(./images/bg-desktop.png);
+
     background-position: center bottom;
     background-size: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .data-storage-component {
+.data-storage-component {
     width: 968px;
     height: 200px;
     flex-direction: row;
     align-items: center;
-  }
 
-  .data-storage-component .container {
+}
+
+.data-storage-component .container {
     margin: 0;
     border-radius: 15px;
-  }
+}
+
+.data-storage-component .container-1 {
+    height: 200px;
+    width: 350px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    border-top-right-radius: 100px;
+}
+
+.data-storage-component .container-1 .logo img {
+    width: 135px;
+    height: auto;
+}
+
+.data-storage-component .container-1 .icons a {
+    width: 50px;
+}
+
+.data-storage-component .container-2 {
+    height: 150px;
+    width: 540px;
+    justify-content: center;
+    text-align: left;
+    min-height: 0;
+    margin-top: auto;
+}
+
+.data-storage-component .container-3 {
+    width: 175px;
+    height: 75px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: -65px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.data-storage-component .container-3:after {
+    content: "";
+    position: absolute;
+    left: 153px;
+    top: 75px;
+    border-left: 22px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 22px solid #fff;
+    clear: both;
+}
+}
+
+/* --Attribution Footer-- */
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.attribution a {
+  color: white;
 }
